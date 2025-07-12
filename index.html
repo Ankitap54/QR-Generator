@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRcode generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barrio&family=Courgette&family=Jacques+Francois+Shadow&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            font-family: sans-serif;
+            /* background-color: rgb(154, 129, 129); */
+           
+        }
+        body{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(149, 185, 185, 0.481);
+            background-repeat: no-repeat;
+            
+        }
+
+        .container {
+            margin-left: 70vh;
+            margin-top: 15vh;
+            background-color: aquamarine;
+            height: 50vh;
+            width: 75vh;
+            position: fixed;
+            background-color: rgba(229, 197, 122, 0.783);
+            box-shadow: 7px 7px 10px 2px rgba(49, 49, 49, 0.478);
+
+        }
+
+        p {
+            font-size: 28px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 5vh;
+         font-family: "Libre Baskerville", serif;
+        }
+
+        input {
+             font-family: "Libre Baskerville", serif;
+            padding: 13px;
+            border: none;
+            border-radius: 40px;
+            margin-left: 7vh;
+            width: 75%;
+            margin-top: 5vh;
+            text-align: center;
+            justify-content: center;
+            box-shadow: 5px 5px 5px rgba(106, 102, 102, 0.662);
+
+        }
+
+        button {
+            padding:8px;
+            margin-left: 12vh;
+            width: 70%;
+            position: absolute;
+             font-family: "Libre Baskerville", serif;
+            margin-top: -5vh;
+            font-size: 17px;
+            background-color: rgb(122, 71, 23);
+            color: white;
+            box-shadow: 5px 5px 5px rgba(50, 49, 49, 0.662);
+        }
+
+        #qrBox {
+            margin-left: 20vh;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="iner">
+    <div class="container">
+        <p>Enter your Text and URL</p>
+        <input type="text" id="input" placeholder="text or url">
+        <div id="qrBox">
+            <img src="" id="qrImg">
+        </div>
+        <button>Generate QR Code</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
